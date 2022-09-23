@@ -1,0 +1,10 @@
+.AxisCell {
+  text-align: center;
+  background-color: #eeeeee;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-right: 1px solid silver;
+  border-bottom: 1px solid silver;
+  min-width: 46px;
+}
