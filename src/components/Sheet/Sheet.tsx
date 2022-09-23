@@ -27,14 +27,22 @@ const Sheet: FunctionComponent<SheetProps> = (props) => {
         <MenuItem
           label="Add 1 Column Right"
           handleClick={() => {
-            handleAddColumn("RIGHT", currentCell[1]);
+            let col = currentCell[1];
+            if (currentCell[0] === 0) {
+              col = col - 1;
+            }
+            handleAddColumn("RIGHT", col);
             setOpen(false);
           }}
         />
         <MenuItem
           label="Add 1 Column Left"
           handleClick={() => {
-            handleAddColumn("LEFT", currentCell[1]);
+            let col = currentCell[1];
+            if (currentCell[0] === 0) {
+              col = col - 1;
+            }
+            handleAddColumn("LEFT", col);
             setOpen(false);
           }}
         />
